@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SalesManNetwork_Example' do
+  pod 'SalesManNetwork', :path => '../'
+
+  target 'SalesManNetwork_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
