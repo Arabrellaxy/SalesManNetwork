@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		1800ED57C1F5C48562DFD238 /* Pods_SalesManNetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesManNetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		454C704A62D5975DBA3F62B6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		454C704A62D5975DBA3F62B6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4B11287590B50830C0D08638 /* Pods-SalesManNetwork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesManNetwork_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesManNetwork_Tests/Pods-SalesManNetwork_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		532A9EFB73B4BD5B82D70BBF /* Pods-SalesManNetwork_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesManNetwork_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesManNetwork_Example/Pods-SalesManNetwork_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		605617E165051DCF2C39C2AF /* Pods_SalesManNetwork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesManNetwork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,9 +44,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7186E99B852EDFAD81135464 /* Pods-SalesManNetwork_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesManNetwork_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesManNetwork_Example/Pods-SalesManNetwork_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C593C073576D31FB43E65BCD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C593C073576D31FB43E65BCD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D65231600E1613440E474E49 /* Pods-SalesManNetwork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesManNetwork_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesManNetwork_Tests/Pods-SalesManNetwork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EEB42836233117D402ADE8F3 /* SalesManNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SalesManNetwork.podspec; path = ../SalesManNetwork.podspec; sourceTree = "<group>"; };
+		EEB42836233117D402ADE8F3 /* SalesManNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SalesManNetwork.podspec; path = ../SalesManNetwork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,10 +319,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SalesManNetwork_Example/Pods-SalesManNetwork_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/SalesManNetwork/SalesManNetwork.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SalesManNetwork.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
