@@ -279,13 +279,6 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		1047B40521883CD10097ECF0 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
 		13965F8687FD7A91F311216D63A437A5 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -434,7 +427,6 @@
 		E2A4BD64FF2FA67961A28AE6CD64D50B /* SalesManNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				1047B40521883CD10097ECF0 /* Resource */,
 				59721B0F0085BDAA9A65E83A6555C5CB /* SalesManAFNetworkAPI.swift */,
 				1047B40821885DA20097ECF0 /* SWAFNParameterConstant.swift */,
 				4E099BE931B56B5EA6446ED94723B6AD /* Pod */,

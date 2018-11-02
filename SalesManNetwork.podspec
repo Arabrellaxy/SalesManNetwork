@@ -33,9 +33,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'SalesManNetwork/Classes/**/*'
   
-  s.resource_bundles = {
-      'SalesManNetwork' => ['SalesManNetwork/Assets/*']
-  }
+  #s.resource_bundles = {
+  #   'SalesManNetwork' => ['SalesManNetwork/Assets/*']
+  #}
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

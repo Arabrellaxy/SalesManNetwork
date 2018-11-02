@@ -97,7 +97,7 @@ public class SalesManAFNetworkAPI{
                 
             }
             completion(tempDic)
-        } else if let tempError:NSError = error as? NSError{
+        } else if let tempError:NSError = error as NSError?{
             let tempDic:NSMutableDictionary = NSMutableDictionary.init()
             switch tempError.code {
             case -1009:
