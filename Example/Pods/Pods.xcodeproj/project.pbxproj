@@ -10,8 +10,7 @@
 		04F3BBE71B24770E40CC66A993AD85D1 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = BB00ADDE9C30E36EB99FA89E831E4590 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09EC74E4AFC1D5951D1F80094D06969A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB7FF3305C3F3E726189CE6DC03B4A6 /* Foundation.framework */; };
 		0ACBBA158F4635FAE16AB5456ABADCA4 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1C251DFB2D3B0E60259BE56A85C5BA /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		103C1163EB5F15F819FF9116EF5143BC /* SalesManNetwork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D52277A4F6FA711D35314571C7591C5D /* SalesManNetwork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1047B40921885DA20097ECF0 /* SWAFNParameterConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1047B40821885DA20097ECF0 /* SWAFNParameterConstant.swift */; };
+		103C1163EB5F15F819FF9116EF5143BC /* SalesManNetwork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8EE834760D4AD1A4CB5D17D4244CA2 /* SalesManNetwork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14769BCAAAC962CCB5D7B88FA2313A36 /* Pods-SalesManNetwork_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F69F6A2AA2334BCDEEC07B2F8E4E41 /* Pods-SalesManNetwork_Tests-dummy.m */; };
 		15F6265FCE0955CDB4967F7306407D67 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FB33A30129B406EB1BD224B6B630B80 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3345805C0D8E8D0726F7E5981DA61A5F /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E79F20FA67EF326AC8DE380E6118EBF4 /* UIWebView+AFNetworking.m */; };
@@ -23,19 +22,19 @@
 		4C5DA96F7CAC26975EEEBD7450FF214D /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C208217BB6EAB64559C0AC437E799C /* AFURLSessionManager.m */; };
 		4F8B19D7DE5E3612485F38CE47FC2E9C /* Pods-SalesManNetwork_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD0A62D2DCEF3511E88C3774ADAA5B8B /* Pods-SalesManNetwork_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5AC661E54EEA2A9FA0F1068B83A85AD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB7FF3305C3F3E726189CE6DC03B4A6 /* Foundation.framework */; };
-		5B0B1460E341BADA82A90DFC2DF1F16E /* SalesManAFNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59721B0F0085BDAA9A65E83A6555C5CB /* SalesManAFNetworkAPI.swift */; };
 		5BFE1CC79F693B6218B419AE50B2070E /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1D89BEED3766388A77B2FCB9912393 /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63BA6FBA10304F4828DE97C0FA63ED9D /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AD7A9F5902061F94EEC77455DF6D75F /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6478B0091202F9429D2A61E30BEDA571 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29192B1F683D403AFFD632D65221D49 /* Security.framework */; };
 		6595C6295B9EBBF40751A376239681FD /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF0F7569C1C4BFC3EF2C9DA3D50CC0B /* UIProgressView+AFNetworking.m */; };
 		659E3B158D092628DC09969746152C79 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5461D992F0D803F0F05DF72B2849301D /* AFNetworking.framework */; };
 		6AB8F78680B3470391219F11D51A1DE7 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A23D5B238032195CA6F925D556B9F96 /* UIImageView+AFNetworking.m */; };
-		6C39C26BEDD9E919276AD7E97716C7CB /* SalesManNetwork.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1272DDEFC8289D7413D0BC0FD68AD404 /* SalesManNetwork.bundle */; };
 		7099E4035C06D3116DA2586EFE563C0B /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174ABA877619CC640989D6AC9A07DF1 /* AFAutoPurgingImageCache.m */; };
+		7732E03D1A927BD24F109728FD866638 /* SWAFNParameterConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9681CF84C5E1EEEC7EAFF087D5321743 /* SWAFNParameterConstant.swift */; };
 		77C5EFB862711656117FE21C6F937E9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB7FF3305C3F3E726189CE6DC03B4A6 /* Foundation.framework */; };
 		78AC6714960C42CC866222B6D956EDF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAA2896C0F3DE743E13BA30642E91F1 /* CoreGraphics.framework */; };
 		81ABD96C8FA6FF28CFB2A3A78A6EA560 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B665811DA7B0645668081A93D378BB87 /* SystemConfiguration.framework */; };
 		86EA527BA1862E06A8E19E0960C66E7E /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C90CE9B626C1720C9ADB8FF999E47D68 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88D938BFE2DF7ADED37B704B5998B9EA /* SalesManNetwork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EF4964670A2EBC450DAD8A6871A62E /* SalesManNetwork-dummy.m */; };
 		89637BFFD180A1E05F04DAF0CF4A6540 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72BF022BF820248A7DC00916D1CC4205 /* MobileCoreServices.framework */; };
 		8A1EB96C607F92E8AA20676F9A4BC7D9 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CE85E1EB18AE94164507FF5D433CE6 /* UIButton+AFNetworking.m */; };
 		8A953E6B63F0DAB5EB6F4819F1FEAF4F /* Pods-SalesManNetwork_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7C2A906F29067A6E260F700E785B3C9 /* Pods-SalesManNetwork_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -53,24 +52,17 @@
 		C12BAA822391D670C53FF0C2299654AD /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F00E33B5224A2ABFD1744688638A40 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C257BE809D4C4357A8EB7118960E3143 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D258251F0E3CC57836C93584D335 /* UIActivityIndicatorView+AFNetworking.m */; };
 		CA0D37AE5433954573D3E37771CDDBFA /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = CFB2918FE96D6AE88B6CA1AB13D6E730 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0B0CBA114D09AF66484AFC48E467F51 /* SalesManNetwork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 375919867C03954E28C2EE7DA6749652 /* SalesManNetwork-dummy.m */; };
 		E5CD5C797956697DDCC98A3EAC7E99E3 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF9AB0D2DE5398A86009837A2760BAD /* AFURLRequestSerialization.m */; };
 		EA23726556D213DB485BD1791C7164CF /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 443C446A800F6280C03E64AF14170EC0 /* AFNetworkActivityIndicatorManager.m */; };
 		ED709B1FCDE0D927693957AC0B222936 /* Pods-SalesManNetwork_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B63D083A6FEE0AC92B0E74947200A6 /* Pods-SalesManNetwork_Example-dummy.m */; };
 		F1199E40BF416FC1ACA2DDCD7B2E23A1 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = AB81F5B5A19D6F63D51E00BB9E746058 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F26CD9A1DF452688BF3C98BBA9090F92 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 05BFBAF94DDF04E8BDBF6323835FB9BC /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F30950E63F3D8D6C07FFB50C5971116E /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 559947ACFC2291BE83F8DEC005B7101D /* AFSecurityPolicy.m */; };
+		F335B5CD67F12D4AB25C5DBFC00CB777 /* SalesManAFNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEFC65D29DB6935FF7F60206A6665B6 /* SalesManAFNetworkAPI.swift */; };
 		F54879EEAE223E90AC9674197E6B1ADE /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = CC18ED6BD8558D5E0970879CD6A9291E /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3CC1F727979346FA081355856AFF2630 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 79DA884CF8FC32397529A28E905C3CA9;
-			remoteInfo = "SalesManNetwork-SalesManNetwork";
-		};
 		43E4BA22E03EDD50C1676F969140007D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -95,56 +87,55 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0075779988416C4737BAF9F0DBF04DE5 /* SalesManNetwork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SalesManNetwork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		022A09213D89979968205ED1C3476332 /* Pods_SalesManNetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesManNetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05BFBAF94DDF04E8BDBF6323835FB9BC /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
 		0929494D86649284B6A56EAB3F91B303 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 		09BDA8426E671B3F1385057205E67201 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		0AF376080E12057AC937F6E1F0D7CB5D /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
 		0EF0F7569C1C4BFC3EF2C9DA3D50CC0B /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
-		1047B40821885DA20097ECF0 /* SWAFNParameterConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SWAFNParameterConstant.swift; path = SalesManNetwork/Classes/SWAFNParameterConstant.swift; sourceTree = "<group>"; };
 		10B9297BDE990026506312DBDD36031E /* Pods-SalesManNetwork_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SalesManNetwork_Tests-resources.sh"; sourceTree = "<group>"; };
 		1174ABA877619CC640989D6AC9A07DF1 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
-		1272DDEFC8289D7413D0BC0FD68AD404 /* SalesManNetwork.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalesManNetwork.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D08F7F28CEDCEF2AFC8BBDB71F26FB /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
-		1614671F5EECBA6A82E49B67DEDFCD5A /* Pods_SalesManNetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesManNetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16738DD487F38D680336081CB60C611A /* Pods-SalesManNetwork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SalesManNetwork_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		17FCADC02A41266A8F7ECA471386ABB3 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		18A6883D7619DD2589020A89887E91E8 /* Pods-SalesManNetwork_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SalesManNetwork_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1AB3C1AE13FE37CFF6F471AF2B1E701D /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		1AEFC65D29DB6935FF7F60206A6665B6 /* SalesManAFNetworkAPI.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; includeInIndex = 1; name = SalesManAFNetworkAPI.swift; path = SalesManNetwork/Classes/SalesManAFNetworkAPI.swift; sourceTree = "<group>"; };
 		1CCFEE4760ACF1F90B7EDE71EC77D070 /* Pods-SalesManNetwork_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SalesManNetwork_Example-frameworks.sh"; sourceTree = "<group>"; };
+		1FA8921BD9097F1A8B46A8496086FBA2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2658E99DDD8EA7B96318F002C7B157B0 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		29951A5A981D2366C0BB9A67B50CC695 /* Pods_SalesManNetwork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesManNetwork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A23D5B238032195CA6F925D556B9F96 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		2A821F310F9CBCED06C1D6DEC3103B24 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		2D5133EED85AA2C08E17D544AD902988 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		353BE42A5F94DADECC35B1DBDA6A1231 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		375919867C03954E28C2EE7DA6749652 /* SalesManNetwork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SalesManNetwork-dummy.m"; sourceTree = "<group>"; };
 		42F2297D5FB594A1BA80CA4020D8A67E /* Pods-SalesManNetwork_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SalesManNetwork_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		42F69F6A2AA2334BCDEEC07B2F8E4E41 /* Pods-SalesManNetwork_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SalesManNetwork_Tests-dummy.m"; sourceTree = "<group>"; };
-		434FF065197CE807BB7163AECA732F1B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		443C446A800F6280C03E64AF14170EC0 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
 		48FCD59DBA1A30AC2C56857B96CAFBC3 /* Pods-SalesManNetwork_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SalesManNetwork_Example-resources.sh"; sourceTree = "<group>"; };
-		4D4AE19EEB78FD9F5C6321F9F8B1C54D /* ResourceBundle-SalesManNetwork-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SalesManNetwork-Info.plist"; sourceTree = "<group>"; };
+		50DEE9281B00A1641C81A00AE449CB5B /* SalesManNetwork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SalesManNetwork.modulemap; sourceTree = "<group>"; };
+		526B12BD0D635AB70F5D8D3674356463 /* SalesManNetwork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SalesManNetwork-prefix.pch"; sourceTree = "<group>"; };
 		5461D992F0D803F0F05DF72B2849301D /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		559947ACFC2291BE83F8DEC005B7101D /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
-		59721B0F0085BDAA9A65E83A6555C5CB /* SalesManAFNetworkAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SalesManAFNetworkAPI.swift; path = SalesManNetwork/Classes/SalesManAFNetworkAPI.swift; sourceTree = "<group>"; };
+		59EF4964670A2EBC450DAD8A6871A62E /* SalesManNetwork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SalesManNetwork-dummy.m"; sourceTree = "<group>"; };
 		5D1C251DFB2D3B0E60259BE56A85C5BA /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
 		5FEED85502FDF573D6B6E66E55512EEE /* Pods-SalesManNetwork_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SalesManNetwork_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		61B8A8110E0BC292AC2262F90C4E1D20 /* SalesManNetwork.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SalesManNetwork.xcconfig; sourceTree = "<group>"; };
 		6361979267EDE0860632095FC6EA4D87 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
 		6991F7B4E6FBB99B839AE95DCF07668F /* Pods-SalesManNetwork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SalesManNetwork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EBCC3064E8C3E55924EBEE7AF2A1312 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72BF022BF820248A7DC00916D1CC4205 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		72C208217BB6EAB64559C0AC437E799C /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
 		7767692E63A86562AB56DE1442428492 /* Pods-SalesManNetwork_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SalesManNetwork_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		77C656407B2E8178A68EAA34454F1E69 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD7A9F5902061F94EEC77455DF6D75F /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
 		7B0CA6C79527144AFBC78E99DA83F1DF /* Pods-SalesManNetwork_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SalesManNetwork_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8B111A72E572F236A399CC7F2E7D3E85 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
-		8BD64EC1FF963B094131594D078328AF /* SalesManNetwork.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SalesManNetwork.xcconfig; sourceTree = "<group>"; };
-		8BD9064850ADDF78636FE1B87215EE2C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		8E8A49F121BCB5CE49932ACF14ED3159 /* SalesManNetwork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SalesManNetwork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		90E67EF1523FF75E260E7F8766F808C7 /* Pods-SalesManNetwork_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SalesManNetwork_Tests.modulemap"; sourceTree = "<group>"; };
-		935C8470770C8A45E419DD636A4BBAB6 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		940F9DBBD5FB7E51683C5858A06D1B91 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		9681CF84C5E1EEEC7EAFF087D5321743 /* SWAFNParameterConstant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWAFNParameterConstant.swift; path = SalesManNetwork/Classes/SWAFNParameterConstant.swift; sourceTree = "<group>"; };
 		9D82029FB8774862A89BC6CD31A855F2 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
-		9ECE2A7B8493FA248DA7E510B46F5367 /* SalesManNetwork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SalesManNetwork.modulemap; sourceTree = "<group>"; };
 		9FB33A30129B406EB1BD224B6B630B80 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		A51BD14F1D9DB136CAD5E19CEB12D539 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAB7FF3305C3F3E726189CE6DC03B4A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -157,18 +148,17 @@
 		BE62D258251F0E3CC57836C93584D335 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
 		BEAA2896C0F3DE743E13BA30642E91F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		BF1D89BEED3766388A77B2FCB9912393 /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
+		BF8EE834760D4AD1A4CB5D17D4244CA2 /* SalesManNetwork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SalesManNetwork-umbrella.h"; sourceTree = "<group>"; };
 		C29192B1F683D403AFFD632D65221D49 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		C3B57277E6602CC2294EF744D1A31176 /* Pods-SalesManNetwork_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SalesManNetwork_Example.modulemap"; sourceTree = "<group>"; };
 		C90CE9B626C1720C9ADB8FF999E47D68 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
 		C96166BDBC20BF9A0A7CCC512640E58A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C981116C7B3C73AA73246E5DDFC7D154 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AFNetworking.modulemap; sourceTree = "<group>"; };
-		C9B51D0EF6866AD88D3C0EA005D7CE58 /* SalesManNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SalesManNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC18ED6BD8558D5E0970879CD6A9291E /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
+		CC3FE91AE2E41A9C2594B73C17E6BBE6 /* SalesManNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SalesManNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC88013A13A80BA08140FC1D0FC17CAD /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		CE212200ABDD5C2B73152A7D7E1B0D02 /* SalesManNetwork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SalesManNetwork-prefix.pch"; sourceTree = "<group>"; };
 		CFB2918FE96D6AE88B6CA1AB13D6E730 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
 		D2F00E33B5224A2ABFD1744688638A40 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
-		D52277A4F6FA711D35314571C7591C5D /* SalesManNetwork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SalesManNetwork-umbrella.h"; sourceTree = "<group>"; };
 		D53B15D80FBA0293865EA099292376D1 /* Pods-SalesManNetwork_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SalesManNetwork_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		D5E9CBCE5E4D8713E454C38B818B6765 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
 		E1C8AE42D5A69E862E48EC78FF350078 /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFCompatibilityMacros.h; path = AFNetworking/AFCompatibilityMacros.h; sourceTree = "<group>"; };
@@ -176,19 +166,12 @@
 		E79F20FA67EF326AC8DE380E6118EBF4 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		F1423F692F2541CFE55253BC467F0025 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
 		FAF9AB0D2DE5398A86009837A2760BAD /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		FB2F445AF1EC37871682FDA81594C756 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FBBC9A9DE11FA914A2F38C849FF38491 /* Pods-SalesManNetwork_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SalesManNetwork_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FC2DEAF263D66E985FCD75438DB619E4 /* Pods_SalesManNetwork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesManNetwork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0A62D2DCEF3511E88C3774ADAA5B8B /* Pods-SalesManNetwork_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SalesManNetwork_Tests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		05DA151551134484DB70EE6BCE70BEBF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6152EDE03AC682B9D10642A04B3A29CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,16 +212,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0178F56748A46D7F4EC39EAE78E44F0B /* Support Files */ = {
+		084A2F97103EC8822041AE2AFDEC9527 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2D5133EED85AA2C08E17D544AD902988 /* Info.plist */,
-				4D4AE19EEB78FD9F5C6321F9F8B1C54D /* ResourceBundle-SalesManNetwork-Info.plist */,
-				9ECE2A7B8493FA248DA7E510B46F5367 /* SalesManNetwork.modulemap */,
-				8BD64EC1FF963B094131594D078328AF /* SalesManNetwork.xcconfig */,
-				375919867C03954E28C2EE7DA6749652 /* SalesManNetwork-dummy.m */,
-				CE212200ABDD5C2B73152A7D7E1B0D02 /* SalesManNetwork-prefix.pch */,
-				D52277A4F6FA711D35314571C7591C5D /* SalesManNetwork-umbrella.h */,
+				6EBCC3064E8C3E55924EBEE7AF2A1312 /* Info.plist */,
+				50DEE9281B00A1641C81A00AE449CB5B /* SalesManNetwork.modulemap */,
+				61B8A8110E0BC292AC2262F90C4E1D20 /* SalesManNetwork.xcconfig */,
+				59EF4964670A2EBC450DAD8A6871A62E /* SalesManNetwork-dummy.m */,
+				526B12BD0D635AB70F5D8D3674356463 /* SalesManNetwork-prefix.pch */,
+				BF8EE834760D4AD1A4CB5D17D4244CA2 /* SalesManNetwork-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/SalesManNetwork";
@@ -271,14 +253,6 @@
 			name = UIKit;
 			sourceTree = "<group>";
 		};
-		0A6CEAB87313E1590EA299ABEEFA05C8 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E2A4BD64FF2FA67961A28AE6CD64D50B /* SalesManNetwork */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		13965F8687FD7A91F311216D63A437A5 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,16 +274,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AFNetworking";
-			sourceTree = "<group>";
-		};
-		4E099BE931B56B5EA6446ED94723B6AD /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				8BD9064850ADDF78636FE1B87215EE2C /* LICENSE */,
-				434FF065197CE807BB7163AECA732F1B /* README.md */,
-				8E8A49F121BCB5CE49932ACF14ED3159 /* SalesManNetwork.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		58ADEC1A744624280C424466F85276D6 /* iOS */ = {
@@ -354,12 +318,24 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				0A6CEAB87313E1590EA299ABEEFA05C8 /* Development Pods */,
+				9A113DE14B4175528F0DC4164B1C665F /* Development Pods */,
 				EFC8D1216166DE80CF4A6175E6193664 /* Frameworks */,
 				641BDD347DE7B8BB81D6CA5727C6EC5A /* Pods */,
-				B901B02A650099878B1A38B39158504F /* Products */,
+				C950572AB151BC6AE58312AD029DB5DB /* Products */,
 				BE02A8D7A7886019E51DD9FE5E838D48 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		81C7425AF9D14C31FB28CF9D954AA744 /* SalesManNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				1AEFC65D29DB6935FF7F60206A6665B6 /* SalesManAFNetworkAPI.swift */,
+				9681CF84C5E1EEEC7EAFF087D5321743 /* SWAFNParameterConstant.swift */,
+				8FB7A8D1CBA96D0ED705EDC580EE91AB /* Pod */,
+				084A2F97103EC8822041AE2AFDEC9527 /* Support Files */,
+			);
+			name = SalesManNetwork;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		86CCD87478E929509958BE9B86F7685E /* Serialization */ = {
@@ -371,6 +347,24 @@
 				2A821F310F9CBCED06C1D6DEC3103B24 /* AFURLResponseSerialization.m */,
 			);
 			name = Serialization;
+			sourceTree = "<group>";
+		};
+		8FB7A8D1CBA96D0ED705EDC580EE91AB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1FA8921BD9097F1A8B46A8496086FBA2 /* LICENSE */,
+				FB2F445AF1EC37871682FDA81594C756 /* README.md */,
+				0075779988416C4737BAF9F0DBF04DE5 /* SalesManNetwork.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		9A113DE14B4175528F0DC4164B1C665F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81C7425AF9D14C31FB28CF9D954AA744 /* SalesManNetwork */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		ABF46ACB89F237A1286066C38D8B8AC0 /* Pods-SalesManNetwork_Example */ = {
@@ -389,18 +383,6 @@
 			);
 			name = "Pods-SalesManNetwork_Example";
 			path = "Target Support Files/Pods-SalesManNetwork_Example";
-			sourceTree = "<group>";
-		};
-		B901B02A650099878B1A38B39158504F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				935C8470770C8A45E419DD636A4BBAB6 /* AFNetworking.framework */,
-				FC2DEAF263D66E985FCD75438DB619E4 /* Pods_SalesManNetwork_Example.framework */,
-				1614671F5EECBA6A82E49B67DEDFCD5A /* Pods_SalesManNetwork_Tests.framework */,
-				1272DDEFC8289D7413D0BC0FD68AD404 /* SalesManNetwork.bundle */,
-				C9B51D0EF6866AD88D3C0EA005D7CE58 /* SalesManNetwork.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		BAA7C8FD05AEAB93C732F63AC9D55B84 /* NSURLSession */ = {
@@ -424,16 +406,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		E2A4BD64FF2FA67961A28AE6CD64D50B /* SalesManNetwork */ = {
+		C950572AB151BC6AE58312AD029DB5DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				59721B0F0085BDAA9A65E83A6555C5CB /* SalesManAFNetworkAPI.swift */,
-				1047B40821885DA20097ECF0 /* SWAFNParameterConstant.swift */,
-				4E099BE931B56B5EA6446ED94723B6AD /* Pod */,
-				0178F56748A46D7F4EC39EAE78E44F0B /* Support Files */,
+				77C656407B2E8178A68EAA34454F1E69 /* AFNetworking.framework */,
+				29951A5A981D2366C0BB9A67B50CC695 /* Pods_SalesManNetwork_Example.framework */,
+				022A09213D89979968205ED1C3476332 /* Pods_SalesManNetwork_Tests.framework */,
+				CC3FE91AE2E41A9C2594B73C17E6BBE6 /* SalesManNetwork.framework */,
 			);
-			name = SalesManNetwork;
-			path = ../..;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		EFC8D1216166DE80CF4A6175E6193664 /* Frameworks */ = {
@@ -539,7 +520,7 @@
 			);
 			name = "Pods-SalesManNetwork_Tests";
 			productName = "Pods-SalesManNetwork_Tests";
-			productReference = 1614671F5EECBA6A82E49B67DEDFCD5A /* Pods_SalesManNetwork_Tests.framework */;
+			productReference = 022A09213D89979968205ED1C3476332 /* Pods_SalesManNetwork_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3B40E1C4141DD909E83D61F97EE2FD50 /* Pods-SalesManNetwork_Example */ = {
@@ -558,44 +539,25 @@
 			);
 			name = "Pods-SalesManNetwork_Example";
 			productName = "Pods-SalesManNetwork_Example";
-			productReference = FC2DEAF263D66E985FCD75438DB619E4 /* Pods_SalesManNetwork_Example.framework */;
+			productReference = 29951A5A981D2366C0BB9A67B50CC695 /* Pods_SalesManNetwork_Example.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		79DA884CF8FC32397529A28E905C3CA9 /* SalesManNetwork-SalesManNetwork */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A95FEFC298AA7A3A07CD93763A636D92 /* Build configuration list for PBXNativeTarget "SalesManNetwork-SalesManNetwork" */;
-			buildPhases = (
-				7F9094D407B57700AAAEC6CF831600CF /* Sources */,
-				05DA151551134484DB70EE6BCE70BEBF /* Frameworks */,
-				8C7950B0D63884CED9394B2BA571D24C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "SalesManNetwork-SalesManNetwork";
-			productName = "SalesManNetwork-SalesManNetwork";
-			productReference = 1272DDEFC8289D7413D0BC0FD68AD404 /* SalesManNetwork.bundle */;
-			productType = "com.apple.product-type.bundle";
 		};
 		879E1A01AEA8CD5F48F0FC2BAD3FA6E7 /* SalesManNetwork */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B26E3781A9E51B48CA39FF0B4E3577F /* Build configuration list for PBXNativeTarget "SalesManNetwork" */;
 			buildPhases = (
-				5F6C68B4F05019B8C1A9C832FF24AB05 /* Sources */,
+				1ABB1CD29DC442B9E42E452A536494C9 /* Sources */,
 				6152EDE03AC682B9D10642A04B3A29CD /* Frameworks */,
-				DFBD183A40337CF9613256F2ECA0A241 /* Resources */,
 				083A5FCC6461E8F0E826C62E61C2D3C9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				B1D56F1EBB30C8EA0FE3F76B82EE1A53 /* PBXTargetDependency */,
-				EC94E942E62B25479F001130610B5786 /* PBXTargetDependency */,
 			);
 			name = SalesManNetwork;
 			productName = SalesManNetwork;
-			productReference = C9B51D0EF6866AD88D3C0EA005D7CE58 /* SalesManNetwork.framework */;
+			productReference = CC3FE91AE2E41A9C2594B73C17E6BBE6 /* SalesManNetwork.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F4160500DCEA3DA3E93FBA579E88CA0A /* AFNetworking */ = {
@@ -612,7 +574,7 @@
 			);
 			name = AFNetworking;
 			productName = AFNetworking;
-			productReference = 935C8470770C8A45E419DD636A4BBAB6 /* AFNetworking.framework */;
+			productReference = 77C656407B2E8178A68EAA34454F1E69 /* AFNetworking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -632,7 +594,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B901B02A650099878B1A38B39158504F /* Products */;
+			productRefGroup = C950572AB151BC6AE58312AD029DB5DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -640,28 +602,9 @@
 				3B40E1C4141DD909E83D61F97EE2FD50 /* Pods-SalesManNetwork_Example */,
 				1F80CF615C4D77A433A78E4B39CBBCA1 /* Pods-SalesManNetwork_Tests */,
 				879E1A01AEA8CD5F48F0FC2BAD3FA6E7 /* SalesManNetwork */,
-				79DA884CF8FC32397529A28E905C3CA9 /* SalesManNetwork-SalesManNetwork */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		8C7950B0D63884CED9394B2BA571D24C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DFBD183A40337CF9613256F2ECA0A241 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6C39C26BEDD9E919276AD7E97716C7CB /* SalesManNetwork.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		01F0BEFC22E67515DE30A41600606F6C /* Sources */ = {
@@ -669,6 +612,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED709B1FCDE0D927693957AC0B222936 /* Pods-SalesManNetwork_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ABB1CD29DC442B9E42E452A536494C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F335B5CD67F12D4AB25C5DBFC00CB777 /* SalesManAFNetworkAPI.swift in Sources */,
+				88D938BFE2DF7ADED37B704B5998B9EA /* SalesManNetwork-dummy.m in Sources */,
+				7732E03D1A927BD24F109728FD866638 /* SWAFNParameterConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -703,23 +656,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F6C68B4F05019B8C1A9C832FF24AB05 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1047B40921885DA20097ECF0 /* SWAFNParameterConstant.swift in Sources */,
-				5B0B1460E341BADA82A90DFC2DF1F16E /* SalesManAFNetworkAPI.swift in Sources */,
-				E0B0CBA114D09AF66484AFC48E467F51 /* SalesManNetwork-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7F9094D407B57700AAAEC6CF831600CF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -740,12 +676,6 @@
 			name = SalesManNetwork;
 			target = 879E1A01AEA8CD5F48F0FC2BAD3FA6E7 /* SalesManNetwork */;
 			targetProxy = 890A46577D164E710A4347875C2EC5CE /* PBXContainerItemProxy */;
-		};
-		EC94E942E62B25479F001130610B5786 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SalesManNetwork-SalesManNetwork";
-			target = 79DA884CF8FC32397529A28E905C3CA9 /* SalesManNetwork-SalesManNetwork */;
-			targetProxy = 3CC1F727979346FA081355856AFF2630 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -879,22 +809,6 @@
 			};
 			name = Debug;
 		};
-		7C00CCEE0AAC04F6B7FD43120AA2E3CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BD64EC1FF963B094131594D078328AF /* SalesManNetwork.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SalesManNetwork";
-				INFOPLIST_FILE = "Target Support Files/SalesManNetwork/ResourceBundle-SalesManNetwork-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = SalesManNetwork;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		827269710C98D60C14D46BC6AF9BF728 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1019,7 +933,7 @@
 		};
 		B1A9DF226CB81E9FF2B73B1120DAAC2B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BD64EC1FF963B094131594D078328AF /* SalesManNetwork.xcconfig */;
+			baseConfigurationReference = 61B8A8110E0BC292AC2262F90C4E1D20 /* SalesManNetwork.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1079,25 +993,9 @@
 			};
 			name = Debug;
 		};
-		E3056725887C45B6ED2F930ACA2866C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BD64EC1FF963B094131594D078328AF /* SalesManNetwork.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SalesManNetwork";
-				INFOPLIST_FILE = "Target Support Files/SalesManNetwork/ResourceBundle-SalesManNetwork-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = SalesManNetwork;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		E4321C51A0B66628B880A3E34564551A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BD64EC1FF963B094131594D078328AF /* SalesManNetwork.xcconfig */;
+			baseConfigurationReference = 61B8A8110E0BC292AC2262F90C4E1D20 /* SalesManNetwork.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1204,15 +1102,6 @@
 			buildConfigurations = (
 				4FD362963BD31635D9219343669FFEEA /* Debug */,
 				F2B321243972D4D5146F21A79A2CE284 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A95FEFC298AA7A3A07CD93763A636D92 /* Build configuration list for PBXNativeTarget "SalesManNetwork-SalesManNetwork" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E3056725887C45B6ED2F930ACA2866C4 /* Debug */,
-				7C00CCEE0AAC04F6B7FD43120AA2E3CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
