@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SalesManNetwork'
-  s.version          = '0.3.0'
-  s.summary          = 'A short description of SalesManNetwork.'
+  s.version          = '0.4.0'
+  s.summary          = 'SalesManNetwork.'
   s.swift_version    = '4.0'
 
 # This description is used to generate tags and improve search results.
