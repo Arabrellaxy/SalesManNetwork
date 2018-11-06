@@ -27,6 +27,16 @@ public class SalesManAFNetworkAPI{
         tempDic.setObject(password, forKey: SWLogin.password as NSCopying)
         self.postRequestWith(relativeURLString: SWLogin.path, params: tempDic.copy() as? NSDictionary,completion: callBack )
     }
+    public func requestVerifyCode(_ phone:String,completion:@escaping (_ result : NSDictionary)->())->Void{
+        let parameters:NSDictionary = ["phone":phone,"purpose": 10]
+        self.postRequestWith(relativeURLString: SWLogin.verifyCode, params: parameters ) { (dictionary) in
+            completion(dictionary)
+        }
+    }
+   
+}
+extension SalesManAFNetworkAPI{
+    //MARK:Private Methods
     public func saveCookies(){
         let cookieData = NSKeyedArchiver.archivedData(withRootObject: HTTPCookieStorage.shared.cookies as Any)
         UserDefaults.standard.set(cookieData, forKey: self.cookieString())
@@ -51,7 +61,7 @@ public class SalesManAFNetworkAPI{
             return
         }
         let cookies:NSArray = NSKeyedUnarchiver.unarchiveObject(with: data as! Data) as! NSArray
-       let cookieStorage = HTTPCookieStorage.shared
+        let cookieStorage = HTTPCookieStorage.shared
         for cookie in cookies {
             cookieStorage.setCookie(cookie as! HTTPCookie)
         }
@@ -78,46 +88,46 @@ public class SalesManAFNetworkAPI{
             }catch{
                 
             }
-
-        }
-      let task =   manager.dataTask(with: request as URLRequest, uploadProgress: nil, downloadProgress: nil) { (response, responseObject, error) in
-        if let resultDic:NSDictionary = responseObject as? NSDictionary {
-            let tempDic :NSMutableDictionary = NSMutableDictionary.init(dictionary: resultDic)
-            let status:String? = resultDic.object(forKey: "status") as? String
-            if let _ = status {
-                //error
-                if status == "ERROR"{
-                    tempDic.setValue(false, forKey: "status")
-                } else {
-                //ok
-                    tempDic.setValue(true, forKey: "status")
-                }
-            }else {
-               // no status
-                
-            }
-            completion(tempDic)
-        } else if let tempError:NSError = error as NSError?{
-            let tempDic:NSMutableDictionary = NSMutableDictionary.init()
-            switch tempError.code {
-            case -1009:
-                tempDic.setValue(false, forKey: "status")
-                tempDic.setValue(SWError.networkError, forKey: SWGlobal.message)
-            case -1007:
-                self.removeCookies()
-                tempDic.setValue(false, forKey: "status")
-                tempDic.setValue(SWError.cookieExpired, forKey: SWGlobal.message)
-                let notificationName = Notification.Name(rawValue: SWNotification.SWCookieExpiredNotification)
-                NotificationCenter.default.post(name: notificationName, object: nil)
-            default:
-                tempDic.setValue(false, forKey: "status")
-                tempDic.setValue(tempError.localizedDescription, forKey: SWGlobal.message)
-            }
-            completion(tempDic)
-        } else {
             
         }
-    }
-    task.resume()
+        let task =   manager.dataTask(with: request as URLRequest, uploadProgress: nil, downloadProgress: nil) { (response, responseObject, error) in
+            if let resultDic:NSDictionary = responseObject as? NSDictionary {
+                let tempDic :NSMutableDictionary = NSMutableDictionary.init(dictionary: resultDic)
+                let status:String? = resultDic.object(forKey: "status") as? String
+                if let _ = status {
+                    //error
+                    if status == "ERROR"{
+                        tempDic.setValue(false, forKey: "status")
+                    } else {
+                        //ok
+                        tempDic.setValue(true, forKey: "status")
+                    }
+                }else {
+                    // no status
+                    
+                }
+                completion(tempDic)
+            } else if let tempError:NSError = error as NSError?{
+                let tempDic:NSMutableDictionary = NSMutableDictionary.init()
+                switch tempError.code {
+                case -1009:
+                    tempDic.setValue(false, forKey: "status")
+                    tempDic.setValue(SWError.networkError, forKey: SWGlobal.message)
+                case -1007:
+                    self.removeCookies()
+                    tempDic.setValue(false, forKey: "status")
+                    tempDic.setValue(SWError.cookieExpired, forKey: SWGlobal.message)
+                    let notificationName = Notification.Name(rawValue: SWNotification.SWCookieExpiredNotification)
+                    NotificationCenter.default.post(name: notificationName, object: nil)
+                default:
+                    tempDic.setValue(false, forKey: "status")
+                    tempDic.setValue(tempError.localizedDescription, forKey: SWGlobal.message)
+                }
+                completion(tempDic)
+            } else {
+                
+            }
+        }
+        task.resume()
     }
 }
