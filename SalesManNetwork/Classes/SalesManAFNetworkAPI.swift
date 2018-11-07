@@ -13,9 +13,9 @@ public class SalesManAFNetworkAPI{
     public  static let shareInstance = SalesManAFNetworkAPI()
     private func baseURL() -> String {
         if BASE_API_DEV {
-           return "http://sscy-dev.sailwish.com/sw-sscy-salesman/"
+           return "http://sscy-dev.sailwish.com/sw-sscy-salesman"
         }
-        return "http://39.104.21.25:8090/sw-sscy-salesman/"
+        return "http://39.104.21.25:8090/sw-sscy-salesman"
     }
    public func loginWithParam(_ param:NSDictionary) ->Void  {
         let tempDic = NSMutableDictionary.init(dictionary: param)
@@ -34,7 +34,9 @@ public class SalesManAFNetworkAPI{
         }
     }
     public func resetPassword(_ verifyCode:String, _ phone:String,_ newPassword:String,completion:@escaping(_ result:NSDictionary)->())->Void{
-        let parameters:NSDictionary = ["code":verifyCode,"phone": phone,"passwd":newPassword]
+        let passwordData = newPassword.data(using: String.Encoding.utf8)!
+        let base64Str = passwordData.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
+        let parameters:NSDictionary = ["code":verifyCode,"phone": phone,"passwd":base64Str]
         self.postRequestWith(relativeURLString: SWLogin.resetPassword, params: parameters) { (dictionary) in
             completion(dictionary)
         }
@@ -79,7 +81,7 @@ extension SalesManAFNetworkAPI{
     private func postRequestWith(relativeURLString:String,params:NSDictionary?,completion:@escaping (_ result : NSDictionary)->()) {
         self.loadCookies()
         let baseURLString = self.baseURL()
-        let urlString:String = baseURLString+"/"+relativeURLString
+        let urlString:String = baseURLString+relativeURLString
         let manager: AFURLSessionManager = AFURLSessionManager.init()
         let request = AFHTTPRequestSerializer.init().request(withMethod: "POST", urlString: urlString, parameters: nil, error: nil)
         request.setValue("application/json;charset=UTF-8", forHTTPHeaderField: "Content-Type")
