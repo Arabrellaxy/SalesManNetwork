@@ -25,11 +25,11 @@ public class SalesManAFNetworkAPI{
         let passwordData = password.data(using: String.Encoding.utf8)!
         password = passwordData.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
         tempDic.setObject(password, forKey: SWLogin.password as NSCopying)
-        self.postRequestWith(relativeURLString: SWLogin.path, params: tempDic.copy() as? NSDictionary,completion: callBack )
+        self.postRequestWith(relativeURLString: SWLogin.loginPath, params: tempDic.copy() as? NSDictionary,completion: callBack )
     }
     public func requestVerifyCode(_ phone:String,completion:@escaping (_ result : NSDictionary)->())->Void{
         let parameters:NSDictionary = ["phone":phone,"purpose": 10]
-        self.postRequestWith(relativeURLString: SWLogin.verifyCode, params: parameters ) { (dictionary) in
+        self.postRequestWith(relativeURLString: SWLogin.verifyCodePath, params: parameters ) { (dictionary) in
             completion(dictionary)
         }
     }
@@ -37,7 +37,7 @@ public class SalesManAFNetworkAPI{
         let passwordData = newPassword.data(using: String.Encoding.utf8)!
         let base64Str = passwordData.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
         let parameters:NSDictionary = ["code":verifyCode,"phone": phone,"passwd":base64Str]
-        self.postRequestWith(relativeURLString: SWLogin.resetPassword, params: parameters) { (dictionary) in
+        self.postRequestWith(relativeURLString: SWLogin.resetPasswordPath, params: parameters) { (dictionary) in
             completion(dictionary)
         }
     }
