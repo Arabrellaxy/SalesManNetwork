@@ -11,6 +11,7 @@ public struct SWLogin {
     public  static let password = "userPass"
     public  static let path = "login.do"
     public  static let verifyCode = "/sw/verify/code/sendVerifyCodeByUserPhone.do"
+    public  static let resetPassword = "/sw/verify/code/findPasswdByPhone.do"
 }
 public struct SWGlobal{
     public  static let callBack = "callBack"

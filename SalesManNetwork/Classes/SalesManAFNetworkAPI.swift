@@ -33,7 +33,12 @@ public class SalesManAFNetworkAPI{
             completion(dictionary)
         }
     }
-   
+    public func resetPassword(_ verifyCode:String, _ phone:String,_ newPassword:String,completion:@escaping(_ result:NSDictionary)->())->Void{
+        let parameters:NSDictionary = ["code":verifyCode,"phone": phone,"passwd":newPassword]
+        self.postRequestWith(relativeURLString: SWLogin.resetPassword, params: parameters) { (dictionary) in
+            completion(dictionary)
+        }
+    }
 }
 extension SalesManAFNetworkAPI{
     //MARK:Private Methods
