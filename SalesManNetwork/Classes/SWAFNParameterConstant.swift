@@ -13,6 +13,13 @@ public struct SWLogin {
     public  static let verifyCodePath = "/sw/verify/code/sendVerifyCodeByUserPhone.do"
     public  static let resetPasswordPath = "/sw/verify/code/findPasswdByPhone.do"
 }
+public struct SWPersonal {
+   
+    public  static let userInfoPath = "/sw/salesman/info/data/getOne.do"
+    public  static let balancePath = "/sw/balance/getBalance.do"
+    public  static let customerCount = "/sw/salesman/member/getCustomerCountBySalesmanId.do"
+}
+
 public struct SWGlobal{
     public  static let callBack = "callBack"
     public  static let message = "message"

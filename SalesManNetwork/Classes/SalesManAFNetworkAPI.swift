@@ -11,13 +11,16 @@ let BASE_API_DEV = true
 
 public class SalesManAFNetworkAPI{
     public  static let shareInstance = SalesManAFNetworkAPI()
-    private func baseURL() -> String {
-        if BASE_API_DEV {
-           return "http://sscy-dev.sailwish.com/sw-sscy-salesman"
-        }
-        return "http://39.104.21.25:8090/sw-sscy-salesman"
+    public func saveCookies(){
+        let cookieData = NSKeyedArchiver.archivedData(withRootObject: HTTPCookieStorage.shared.cookies as Any)
+        UserDefaults.standard.set(cookieData, forKey: self.cookieString())
+        UserDefaults.standard.synchronize()
+        
     }
-   public func loginWithParam(_ param:NSDictionary) ->Void  {
+}
+//MARK:Login Methods
+extension SalesManAFNetworkAPI {
+    public func loginWithParam(_ param:NSDictionary) ->Void  {
         let tempDic = NSMutableDictionary.init(dictionary: param)
         let callBack:(NSDictionary) -> () = tempDic.object(forKey:SWGlobal.callBack) as! (NSDictionary) -> ()
         tempDic.removeObject(forKey: "callBack")
@@ -42,14 +45,56 @@ public class SalesManAFNetworkAPI{
         }
     }
 }
+//MARK:Personal Page
 extension SalesManAFNetworkAPI{
-    //MARK:Private Methods
-    public func saveCookies(){
-        let cookieData = NSKeyedArchiver.archivedData(withRootObject: HTTPCookieStorage.shared.cookies as Any)
-        UserDefaults.standard.set(cookieData, forKey: self.cookieString())
-        UserDefaults.standard.synchronize()
-        
+    public func requestPersonalData(userId:String,completion:@escaping(_ result:NSArray)->())->Void{
+        let tempArray :NSMutableArray = NSMutableArray.init(capacity: 3)
+        let group = DispatchGroup.init()
+        group.enter()
+        self.requestUserInfo(userID: userId) { (resultDic) in
+            tempArray.insert(resultDic, at: 0)
+           group.leave()
+        }
+        group.enter()
+        self.requestBalance { (resultDic) in
+            tempArray.insert(resultDic, at: 1)
+            group.leave()
+        }
+        group.enter()
+        self.requestCustomerCount{ (resultDic) in
+            tempArray.insert(resultDic, at: 2)
+            group.leave()
+        }
+        group.notify(queue: DispatchQueue.main) {
+            completion(tempArray.copy() as! NSArray)
+        }
     }
+    private func requestUserInfo(userID:String,completion:@escaping(_ result:NSDictionary)->())->Void{
+        let parameters:NSDictionary = ["userId":userID]
+        self.postRequestWith(relativeURLString: SWPersonal.userInfoPath, params: parameters) { (dictionary) in
+            completion(dictionary)
+        }
+    }
+    private func requestBalance(completion:@escaping(_ result:NSDictionary)->())->Void{
+        self.postRequestWith(relativeURLString: SWPersonal.balancePath, params: nil) { (dictionary) in
+            completion(dictionary)
+        }
+    }
+    private func requestCustomerCount(completion:@escaping(_ result:NSDictionary)->())->Void{
+        self.postRequestWith(relativeURLString: SWPersonal.customerCount, params: nil) { (dictionary) in
+            completion(dictionary)
+        }
+    }
+}
+//MARK:Private Methods
+extension SalesManAFNetworkAPI{
+    private func baseURL() -> String {
+        if BASE_API_DEV {
+            return "http://sscy-dev.sailwish.com/sw-sscy-salesman"
+        }
+        return "http://39.104.21.25:8090/sw-sscy-salesman"
+    }
+  
     private func removeCookies(){
         let userDefaut = UserDefaults.standard
         userDefaut.set(Data.init(), forKey: self.cookieString())
