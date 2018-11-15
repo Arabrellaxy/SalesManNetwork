@@ -48,21 +48,21 @@ extension SalesManAFNetworkAPI {
 //MARK:Personal Page
 extension SalesManAFNetworkAPI{
     public func requestPersonalData(userId:String,completion:@escaping(_ result:NSArray)->())->Void{
-        let tempArray :NSMutableArray = NSMutableArray.init(capacity: 3)
+        let tempArray:NSMutableArray = ([NSDictionary](repeating: NSDictionary.init(), count:3) as NSArray).mutableCopy() as! NSMutableArray
         let group = DispatchGroup.init()
         group.enter()
         self.requestUserInfo(userID: userId) { (resultDic) in
-            tempArray.insert(resultDic, at: 0)
+            tempArray.replaceObject(at: 0, with: resultDic)
            group.leave()
         }
         group.enter()
         self.requestBalance { (resultDic) in
-            tempArray.insert(resultDic, at: 1)
+            tempArray.replaceObject(at: 1, with: resultDic)
             group.leave()
         }
         group.enter()
         self.requestCustomerCount{ (resultDic) in
-            tempArray.insert(resultDic, at: 2)
+            tempArray.replaceObject(at: 2, with: resultDic)
             group.leave()
         }
         group.notify(queue: DispatchQueue.main) {

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SalesManNetwork
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        SalesManAFNetworkAPI.shareInstance.requestPersonalData(userId: "1111") { (result) in
+            
+        }
         return true
     }
 
