@@ -76,12 +76,12 @@ extension SalesManAFNetworkAPI{
         }
     }
     private func requestBalance(completion:@escaping(_ result:NSDictionary)->())->Void{
-        self.postRequestWith(relativeURLString: SWPersonal.balancePath, params: nil) { (dictionary) in
+        self.postRequestWith(relativeURLString: SWPersonal.balancePath, params: NSDictionary.init()) { (dictionary) in
             completion(dictionary)
         }
     }
     private func requestCustomerCount(completion:@escaping(_ result:NSDictionary)->())->Void{
-        self.postRequestWith(relativeURLString: SWPersonal.customerCount, params: nil) { (dictionary) in
+        self.postRequestWith(relativeURLString: SWPersonal.customerCount, params: NSDictionary.init()) { (dictionary) in
             completion(dictionary)
         }
     }
@@ -108,11 +108,11 @@ extension SalesManAFNetworkAPI{
         }
     }
     private func loadCookies(){
-        let data = UserDefaults.standard.object(forKey: self.cookieString())
-        guard let _ = data else {
+        let data:Data? = UserDefaults.standard.object(forKey: self.cookieString()) as? Data
+        guard !(data?.isEmpty)! else {
             return
         }
-        let cookies:NSArray = NSKeyedUnarchiver.unarchiveObject(with: data as! Data) as! NSArray
+        let cookies:NSArray = NSKeyedUnarchiver.unarchiveObject(with: data!) as! NSArray
         let cookieStorage = HTTPCookieStorage.shared
         for cookie in cookies {
             cookieStorage.setCookie(cookie as! HTTPCookie)
