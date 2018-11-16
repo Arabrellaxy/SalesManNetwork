@@ -11,6 +11,7 @@ let BASE_API_DEV = true
 
 public class SalesManAFNetworkAPI{
     public  static let shareInstance = SalesManAFNetworkAPI()
+    internal  let sessionManager = AFURLSessionManager.init()
     public func saveCookies(){
         let cookieData = NSKeyedArchiver.archivedData(withRootObject: HTTPCookieStorage.shared.cookies as Any)
         UserDefaults.standard.set(cookieData, forKey: self.cookieString())
@@ -53,7 +54,7 @@ extension SalesManAFNetworkAPI{
         group.enter()
         self.requestUserInfo(userID: userId) { (resultDic) in
             tempArray.replaceObject(at: 0, with: resultDic)
-           group.leave()
+            group.leave()
         }
         group.enter()
         self.requestBalance { (resultDic) in
@@ -94,7 +95,7 @@ extension SalesManAFNetworkAPI{
         }
         return "http://39.104.21.25:8090/sw-sscy-salesman"
     }
-  
+    
     private func removeCookies(){
         let userDefaut = UserDefaults.standard
         userDefaut.set(Data.init(), forKey: self.cookieString())
@@ -109,7 +110,7 @@ extension SalesManAFNetworkAPI{
     }
     private func loadCookies(){
         let data:Data? = UserDefaults.standard.object(forKey: self.cookieString()) as? Data
-        guard !(data?.isEmpty)! else {
+        guard (data != nil),!(data?.isEmpty)! else {
             return
         }
         let cookies:NSArray = NSKeyedUnarchiver.unarchiveObject(with: data!) as! NSArray
@@ -123,11 +124,15 @@ extension SalesManAFNetworkAPI{
         bundle.append(".cookie")
         return bundle
     }
+    private func stopAllTasks(){
+        for task in self.sessionManager.tasks {
+            task.cancel()
+        }
+    }
     private func postRequestWith(relativeURLString:String,params:NSDictionary?,completion:@escaping (_ result : NSDictionary)->()) {
         self.loadCookies()
         let baseURLString = self.baseURL()
         let urlString:String = baseURLString+relativeURLString
-        let manager: AFURLSessionManager = AFURLSessionManager.init()
         let request = AFHTTPRequestSerializer.init().request(withMethod: "POST", urlString: urlString, parameters: nil, error: nil)
         request.setValue("application/json;charset=UTF-8", forHTTPHeaderField: "Content-Type")
         request.setValue("application/json;charset=UTF-8", forHTTPHeaderField: "Accept")
@@ -142,7 +147,7 @@ extension SalesManAFNetworkAPI{
             }
             
         }
-        let task =   manager.dataTask(with: request as URLRequest, uploadProgress: nil, downloadProgress: nil) { (response, responseObject, error) in
+        let task =   self.sessionManager.dataTask(with: request as URLRequest, uploadProgress: nil, downloadProgress: nil) { (response, responseObject, error) in
             if let resultDic:NSDictionary = responseObject as? NSDictionary {
                 let tempDic :NSMutableDictionary = NSMutableDictionary.init(dictionary: resultDic)
                 let status:String? = resultDic.object(forKey: "status") as? String
@@ -166,6 +171,7 @@ extension SalesManAFNetworkAPI{
                     tempDic.setValue(false, forKey: "status")
                     tempDic.setValue(SWError.networkError, forKey: SWGlobal.message)
                 case -1007:
+                    self.stopAllTasks()
                     self.removeCookies()
                     tempDic.setValue(false, forKey: "status")
                     tempDic.setValue(SWError.cookieExpired, forKey: SWGlobal.message)
