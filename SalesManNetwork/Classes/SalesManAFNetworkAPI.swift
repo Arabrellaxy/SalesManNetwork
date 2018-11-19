@@ -87,6 +87,15 @@ extension SalesManAFNetworkAPI{
         }
     }
 }
+//MARK:商品分类
+extension SalesManAFNetworkAPI {
+    public func requestItemCategory(completion:@escaping(_ result:NSDictionary)->()){
+        let parameters:NSDictionary = NSDictionary.init()
+        self.postRequestWith(relativeURLString: SWItemCateogry.categoryPath, params: parameters) { (dictionary) in
+            completion(dictionary)
+        }
+    }
+}
 //MARK:Private Methods
 extension SalesManAFNetworkAPI{
     private func baseURL() -> String {

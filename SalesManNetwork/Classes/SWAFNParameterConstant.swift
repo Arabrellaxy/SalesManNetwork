@@ -14,10 +14,12 @@ public struct SWLogin {
     public  static let resetPasswordPath = "/sw/verify/code/findPasswdByPhone.do"
 }
 public struct SWPersonal {
-   
     public  static let userInfoPath = "/sw/salesman/info/data/getOne.do"
     public  static let balancePath = "/sw/balance/getBalance.do"
     public  static let customerCount = "/sw/salesman/member/getCustomerCountBySalesmanId.do"
+}
+public struct SWItemCateogry {
+    public  static let categoryPath = "/sw/product/category/getAllCategory.do"
 }
 
 public struct SWGlobal{

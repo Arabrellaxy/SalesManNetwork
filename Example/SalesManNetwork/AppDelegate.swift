@@ -16,53 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        let callBack = { (result : NSDictionary)  in
-//            let status = result.object(forKey: SWGlobal.status) as? Bool
-//            guard let _ = status else {
-//                return
-//            }
-//            if status! {
-//                SalesManAFNetworkAPI.shareInstance.saveCookies()
-                SalesManAFNetworkAPI.shareInstance.requestPersonalData(userId: "") { (result) in
-                    let userInfoDic:NSDictionary = result[0] as! NSDictionary
-                    let userDic:NSDictionary? = (userInfoDic.object(forKey: "data") as? NSDictionary)?.object(forKey: "sysUser") as? NSDictionary
-                    let userInfoSuccess = userInfoDic.object(forKey: "status") as! Bool
-                    
-                    let balanceDic:NSDictionary = result[1] as! NSDictionary
-                    let balance:String? = (balanceDic.object(forKey: "data") as? NSDictionary)?.object(forKey: "totalBalance") as? String
-                    let balanclSuccess = balanceDic.object(forKey: "status") as! Bool
-
-                    let customerCountDic:NSDictionary = result[2] as! NSDictionary
-                    let customerCount = "\(customerCountDic.object(forKey: "data") ?? 0)"
-                    let customerCountSuccess = customerCountDic.object(forKey: "status") as! Bool
-
-                    guard let _ = userDic else {
-                        return
-                    }
-                    guard  userInfoSuccess else{
-                        let userInfoMessage = userInfoDic.object(forKey: "message")
-                        
-                        return
-                    }
-                    guard  balanclSuccess else{
-                        let balanclMessage  = balanceDic.object(forKey: "message")
-
-                        return
-                    }
-                    guard  customerCountSuccess else{
-                        let customerCountMessage  = customerCountDic.object(forKey: "message")
-                        
-                        return
-                    }
-                    let temp =  (
-                        (userDic!.object(forKey: "userPhoto") as? String) ?? "",
-                        (userDic!.object(forKey: "userName") as? String) ?? "",
-                        (userDic!.object(forKey: "userPhone") as? String) ?? "",
-                        (userDic!.object(forKey: "userAddr") as? String) ?? "",
-                        balance!,
-                        customerCount
-                    )
-                }
+        let callBack = { (responseDic : NSDictionary)  in
+            let status = responseDic.object(forKey: SWGlobal.status) as? Bool
+            guard let _ = status else {
+                return
+            }
+            if status! {
+                SalesManAFNetworkAPI.shareInstance.saveCookies()
+                SalesManAFNetworkAPI.shareInstance.requestItemCategory(completion: { (result) in
+                    print("item")
+                })
 
 //                //success
 //                let userID:String  = responseDic.object(forKey: "userId") as! String
@@ -72,25 +35,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                } else {
 //                    let _ = SWDataStorage.init().storeUserInfo(userID: userID, username: username, password: nil)
 //                }
-                //store cookie
-//                SalesManAFNetworkAPI.shareInstance.saveCookies()
-                //dismiss
+                SalesManAFNetworkAPI.shareInstance.saveCookies()
 //                self.dismiss(animated: true, completion: nil)
-//            } else {
-                //error
-//                var message = responseDic.object(forKey: SWGlobal.message) as? String
-//                guard let _ = message else{
-//                    message = "账号或密码错误"
-////                    self.view.showTextHud(text: message!, autoHide: true)
-//                    return
-//                }
+            } else {
+                var message = responseDic.object(forKey: SWGlobal.message) as? String
+                guard let _ = message else{
+                    message = "账号或密码错误"
+//                    self.view.showTextHud(text: message!, autoHide: true)
+                    return
+                }
 //                self.view.showTextHud(text: message!, autoHide: true)
-//            }
-//        }
+            }
+        }
 //        self.view.showLoadingHud(loadingText: "正在登录")
-//        SalesManAFNetworkAPI.shareInstance.loginWithParam([SWLogin.username:"xieyan",
-//                                                           SWLogin.password:"111111",
-//                                                           SWGlobal.callBack:callBack])
+        SalesManAFNetworkAPI.shareInstance.loginWithParam([SWLogin.username:"xieyan",
+                                                           SWLogin.password:"111111",
+                                                           SWGlobal.callBack:callBack])
         return true
     }
 
