@@ -21,7 +21,13 @@ public struct SWPersonal {
 public struct SWItemCateogry {
     public  static let categoryPath = "/sw/product/category/getAllCategory.do"
 }
+public struct SWCustomerManagement {
+    public  static let groupPath = "/sw/group/dataWithOne/listByPage.do"
+    public  static let typePath = "sys/code/fc.do?key=terminalType"
+    public  static let statusPath = "/sys/code/fc.do?key=checkState"
+    public  static let customerPath = "/sw/group/getAllGroupAndCustomer.do"
 
+}
 public struct SWGlobal{
     public  static let callBack = "callBack"
     public  static let message = "message"

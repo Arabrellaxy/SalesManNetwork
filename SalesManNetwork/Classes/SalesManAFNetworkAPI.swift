@@ -96,6 +96,38 @@ extension SalesManAFNetworkAPI {
         }
     }
 }
+//MARK:客户管理
+extension SalesManAFNetworkAPI {
+    public func requestTerminalGroup(userId:String,completion:@escaping(_ result:NSDictionary)->()){
+        let urlString:String = SWCustomerManagement.groupPath+"page=\(0)&size=\(100)&sort=\("")"
+        let parameters:NSDictionary = NSDictionary.init(object: userId, forKey: "swSalesmanId" as NSCopying)
+        self.postRequestWith(relativeURLString: urlString, params: parameters) { (resutDic) in
+            completion(resutDic)
+        }
+    }
+    public func requestTerminalType(completion:@escaping(_ result:NSDictionary)->()){
+        let parameters:NSDictionary = NSDictionary.init()
+        self.postRequestWith(relativeURLString: SWCustomerManagement.typePath, params: parameters) { (dictionary) in
+            completion(dictionary)
+        }
+    }
+    public func requestTerminalStatus(completion:@escaping(_ result:NSDictionary)->()){
+        let parameters:NSDictionary = NSDictionary.init()
+        self.postRequestWith(relativeURLString: SWCustomerManagement.statusPath, params: parameters) { (dictionary) in
+            completion(dictionary)
+        }
+    }
+    public func requestCustomerInfo(searchValueDic:NSDictionary?,completion:@escaping(_ result:NSDictionary)->()){
+        let parameters:NSMutableDictionary = NSMutableDictionary.init()
+        if searchValueDic != nil {
+            parameters.setDictionary(searchValueDic as! [AnyHashable : Any])
+            parameters.setValue(true, forKey: "isSearch")
+        }
+        self.postRequestWith(relativeURLString: SWItemCateogry.categoryPath, params: parameters) { (dictionary) in
+            completion(dictionary)
+        }
+    }
+}
 //MARK:Private Methods
 extension SalesManAFNetworkAPI{
     private func baseURL() -> String {
